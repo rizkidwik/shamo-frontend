@@ -84,7 +84,9 @@ class _ProductPageState extends State<ProductPage> {
                   width: 154,
                   height: 44,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/checkout');
+                    },
                     style: TextButton.styleFrom(
                       backgroundColor: primaryColor,
                       shape: RoundedRectangleBorder(
